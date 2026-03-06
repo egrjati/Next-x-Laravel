@@ -10,11 +10,23 @@ Sebuah fondasi *full-stack* modern eksklusif yang dirancang dengan presisi, mema
 
 ---
 
-<img src="https://img.shields.io/badge/Private%20Repository-111827?style=for-the-badge&logo=github&logoColor=white" alt="Private Repository" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-<img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+<div align="center" style="margin-top: 20px;">
+  <div style="display: flex; gap: 10px; justify-content: center;">
+    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" style="animation: fadeInOut 8s infinite; opacity:0;" />
+    <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" style="animation: fadeInOut 8s infinite; opacity:0; animation-delay:2s;" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" style="animation: fadeInOut 8s infinite; opacity:0; animation-delay:4s;" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" style="animation: fadeInOut 8s infinite; opacity:0; animation-delay:6s;" />
+  </div>
+</div>
+<style>
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  12.5% { opacity: 1; }
+  25% { opacity: 1; }
+  37.5% { opacity: 0; }
+  100% { opacity: 0; }
+}
+</style>
 </div>
 
 <br/>
