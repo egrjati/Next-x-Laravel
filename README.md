@@ -1,9 +1,11 @@
 <div align="center">
 
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" style="animation: fadeIn 2s infinite; opacity:0; animation-delay:0s;" />
-  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" style="animation: fadeIn 2s infinite; opacity:0; animation-delay:0.5s;" />
-  ...
-
+<div align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" style="animation: fadeIn 2.5s infinite; opacity:0; animation-delay:0s;" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" style="animation: fadeIn 2.5s infinite; opacity:0; animation-delay:0.5s;" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" style="animation: fadeIn 2.5s infinite; opacity:0; animation-delay:1s;" />
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" style="animation: fadeIn 2.5s infinite; opacity:0; animation-delay:1.5s;" />
+</div>
 <style>
 @keyframes fadeIn {
   0% { opacity:0; }
@@ -20,9 +22,10 @@ Sebuah fondasi *full-stack* modern eksklusif yang dirancang dengan presisi, mema
 ---
 
 <img src="https://img.shields.io/badge/Private%20Repository-111827?style=for-the-badge&logo=github&logoColor=white" alt="Private Repository" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
+<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
-
 </div>
 
 <br/>
