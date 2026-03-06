@@ -1,8 +1,17 @@
 <div align="center">
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=32&pause=1000&color=111827&center=true&vCenter=true&width=600&lines=Private+Workspace;Next.js+%2B+Laravel+Architecture;Modern,+Minimalist,+Scalable" alt="Typing SVG" />
-</a>
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" style="animation: fadeIn 2s infinite; opacity:0; animation-delay:0s;" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" style="animation: fadeIn 2s infinite; opacity:0; animation-delay:0.5s;" />
+  ...
+
+<style>
+@keyframes fadeIn {
+  0% { opacity:0; }
+  20% { opacity:1; }
+  80% { opacity:1; }
+  100% { opacity:0; }
+}
+</style>
 
 <br/>
 
@@ -11,10 +20,9 @@ Sebuah fondasi *full-stack* modern eksklusif yang dirancang dengan presisi, mema
 ---
 
 <img src="https://img.shields.io/badge/Private%20Repository-111827?style=for-the-badge&logo=github&logoColor=white" alt="Private Repository" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
-<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
 <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+
 </div>
 
 <br/>
