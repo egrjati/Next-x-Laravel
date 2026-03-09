@@ -1,0 +1,6 @@
+{
+  "tailwindCSS.experimental.configFile": "frontend/src/app/globals.css",
+  "tailwindCSS.validate": false,
+  "tailwindCSS.lint.invalidScreen": "ignore",
+  "tailwindCSS.lint.invalidVariant": "ignore"
+}

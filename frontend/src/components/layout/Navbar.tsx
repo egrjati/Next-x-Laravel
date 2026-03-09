@@ -6,12 +6,12 @@ export default function Navbar() {
       {/* top 1 */}
       <div className="w-full bg-[#7eb7c4] h-9 items-center justify-center flex gap-4">
         <p className="text-white text-center text-sm font-inter">
-          Wahyu Enggar Jati
+          No.1 K-Accesorice Brand in East Java
         </p>
       </div>
       {/* top 2 */}
-      <div className="bg-[#278236] w-full h-16 flex items-center justify-between px-7">
-        <h1 className="text-white text-2xl font-bold font-montserrat ml-4">
+      <div className="bg-[#278236] w-full h-16 flex items-center justify-between px-10">
+        <h1 className="text-white text-2xl font-bold font-stora">
           Holdme
         </h1>
         {/* Menu Tengah */}

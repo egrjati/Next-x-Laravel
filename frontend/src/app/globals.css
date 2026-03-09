@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Stora";
+  src: url("/asset/fonts/Stora-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -46,4 +54,8 @@ body {
 
 .font-montserrat {
   font-family: var(--font-montserrat), sans-serif;
+}
+
+.font-stora {
+  font-family: "Stora", var(--font-montserrat), sans-serif;
 }

@@ -1,7 +1,9 @@
 export default function Home() {
   return (
     <section className="w-full min-h-screen flex flex-col bg-[#f6f0da] overflow-x-hidden">
-      <header className="w-full md:h-[475px] bg-[#b48453] mt-[0.5px]"></header>
+      <header className="w-full md:h-[475px] bg-[#b48453] mt-[0.5px]">
+        <img src="/asset/img/Hero Section.svg" alt="Hero Banner" className="w-full h-full object-cover" />
+      </header>
 
       <main className="w-full mt-28">
         <h1 className="lg:text-5xl font-bold text-black text-center font-sora">
