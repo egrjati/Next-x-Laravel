@@ -25,17 +25,26 @@ export default function Home() {
 
           {/* Grid Produk */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
-
-            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
-            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
-            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
-            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
-
+            <article className="group h-72 w-56 p-3 overflow-hidden">
+              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
+            </article>
+            <article className="group h-72 w-56 p-3 overflow-hidden">
+              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
+            </article>
+            <article className="group h-72 w-56 p-3 overflow-hidden">
+              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
+            </article>
+            <article className="group h-72 w-56 p-3 overflow-hidden">
+              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
+            </article>
           </div>
 
+          {/* Promo */}
+          <div>
+
+          </div>
+          
         </section>
-
-
       </main>
     </section>
   );
