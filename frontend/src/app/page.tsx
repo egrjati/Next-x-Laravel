@@ -13,8 +13,8 @@ export default function Home() {
         {/* garis kiri */}
         <div className="absolute left-0 top-0 h-screen bg-black w-0.5"></div>
 
-        {/* judul */}
-        <div className="w-full flex flex-col items-center">
+        {/* Kanan */}
+        <section className="w-full flex flex-col items-center">
           <h1 className="lg:text-4xl font-bold text-[#222520] text-center font-sora">
             The Articles
           </h1>
@@ -22,10 +22,21 @@ export default function Home() {
             Kumpulan artikel rilisan terbatas yang dirancang khusus buat nemenin
             setiap langkah dan cerita lo di jalanan.
           </p>
-        </div>
-      </main>
 
-      <div className=" mt-28 mb-96"></div>
+          {/* Grid Produk */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+
+            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
+            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
+            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
+            <article className="bg-amber-300 rounded-xl h-72 w-56"></article>
+
+          </div>
+
+        </section>
+
+
+      </main>
     </section>
   );
 }
