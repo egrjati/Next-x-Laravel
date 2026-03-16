@@ -11,7 +11,7 @@ export default function Home() {
 
       <main className="w-full mt-28 relative ml-6">
         {/* garis kiri */}
-        <div className="absolute left-0 top-0 h-screen bg-black w-0.5"></div>
+        <div className="absolute left-0 top-0 h-[400px] bg-black w-0.5"></div>
 
         {/* Kanan */}
         <section className="w-full flex flex-col items-center">
@@ -38,14 +38,22 @@ export default function Home() {
               <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
             </article>
           </div>
-
-          {/* Promo */}
-          <div>
-
-          </div>
-          
         </section>
       </main>
+
+      {/* Promo */}
+      <div className="w-full mt-20 py-5 px-4 flex gap-4">
+        {/* kotak 1 */}
+        <div className="w-80 h-96 border border-black rounded-lg p-2 relative">
+          {/* status */}
+          <div className="p-1 bg-gray-300 rounded-lg w-fit">
+            <p className="top-0 text-black text-sm font-poppins">NEW COLOR</p>
+          </div>
+          <p className="absolute bottom-2 left-2 text-gray-600 text-xs font-poppins">
+            Available now
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
