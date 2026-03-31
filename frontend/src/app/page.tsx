@@ -44,15 +44,17 @@ export default function Home() {
       {/* Promo */}
       <div className="w-full mt-20 py-5 px-4 flex gap-4">
         {/* kotak 1 */}
-        <div className="w-80 h-96 border border-black rounded-lg p-2 relative">
+        <div className="w-80 h-96 border border-black rounded-lg p-4 relative">
           {/* status */}
-          <div className="p-1 bg-gray-300 rounded-lg w-fit">
-            <p className="top-0 text-black text-sm font-poppins">NEW COLOR</p>
+          <div className="p-1 bg-gray-300 rounded-2xl w-fit">
+            <p className="top-0 text-black text-sm font-poppins">New Color</p>
           </div>
           <p className="absolute bottom-2 left-2 text-gray-600 text-xs font-poppins">
             Available now
           </p>
         </div>
+
+
       </div>
     </section>
   );
