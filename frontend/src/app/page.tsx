@@ -25,21 +25,26 @@ export default function Home() {
 
           {/* Grid Produk */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
-            <article className="group h-72 w-56 p-3 overflow-hidden">
+            <article className="group h-72 w-60 p-3 overflow-hidden">
               <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
             </article>
-            <article className="group h-72 w-56 p-3 overflow-hidden">
+            <article className="group h-72 w-60 p-3 overflow-hidden">
               <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
             </article>
-            <article className="group h-72 w-56 p-3 overflow-hidden">
+            <article className="group h-72 w-60 p-3 overflow-hidden">
               <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
             </article>
-            <article className="group h-72 w-56 p-3 overflow-hidden">
+            <article className="group h-72 w-60 p-3 overflow-hidden">
               <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
             </article>
           </div>
+          <button className="mt-10 bg-black tracking-wider text-white py-2 px-6 hover:bg-gray-800 transition-colors">
+            View All Products
+          </button>
         </section>
       </main>
+
+      <hr className="border border-gray-700 max-w-2xl mt-20 mx-auto"/>
 
       {/* Promo */}
       <div className="w-full mt-20 py-5 px-4 flex gap-4">

@@ -5,7 +5,7 @@ export default function Navbar() {
     <section className="w-full flex flex-col overflow-x-hidden">
       {/* top 1 */}
       <div className="w-full bg-[#363636] h-10 items-center justify-center flex gap-4 border-b border-gray-300">
-        <p className="text-white text-center text-[12px] font-poppins tracking-wider p-2">
+        <p className="text-white text-center font-bold text-[10px] font-poppins tracking-widest p-2">
           ENJOY 85% OFF + FREE SHIPPING
         </p>
       </div>
@@ -22,25 +22,25 @@ export default function Navbar() {
             </button>
           </div>
 
-          <h1 className="text-black text-2xl md:text-3xl font-bold font-stora text-center uppercase tracking-[0.12em]">
+          <h1 className="text-black text-lg md:text-3xl font-semibold font-poppins text-center uppercase tracking-[0.12em]">
             Holdme
           </h1>
 
-          <div className="flex items-center justify-end gap-4 text-black">
+          <div className="flex items-center justify-end gap-5 text-slate-800">
             <button aria-label="Account" className="cursor-pointer">
-              <User className="h-5 w-5" strokeWidth={2} />
+              <User className="h-6 w-6" strokeWidth={2} />
             </button>
             <button aria-label="Search" className="cursor-pointer">
-              <Search className="h-5 w-5" strokeWidth={2} />
+              <Search className="h-6 w-6" strokeWidth={2} />
             </button>
             <button aria-label="Cart" className="cursor-pointer">
-              <ShoppingBag className="h-5 w-5" strokeWidth={2} />
+              <ShoppingBag className="h-6 w-6" strokeWidth={2} />
             </button>
           </div>
         </div>
 
         <div className="mt-5 flex justify-center">
-          <ul className="flex flex-wrap items-center justify-center gap-6 md:gap-10 font-inter text-sm text-black uppercase tracking-[0.18em]">
+          <ul className="flex flex-wrap items-center justify-center gap-5 md:gap-9 font-poppins text-sm text-black uppercase tracking-[0.18em]">
             <li>New</li>
             <li>Product</li>
             <li>Blog</li>
