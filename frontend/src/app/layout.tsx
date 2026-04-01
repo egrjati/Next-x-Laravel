@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
+import Footer from "@/components/layout/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -53,6 +54,8 @@ export default function RootLayout({
         <Navbar />
 
         <main className="min-h-screen">{children}</main>
+
+        <Footer />
       </body>
     </html>
   );
