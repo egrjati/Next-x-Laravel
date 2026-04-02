@@ -8,7 +8,7 @@ import {
 } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
-import Footer from "@/components/layout/footer";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-inter",

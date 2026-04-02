@@ -46,7 +46,7 @@ export default function Footer() {
             </h3>
             <div className="mt-5 space-y-4 font-poppins text-[12px] leading-[1.6] text-[#636363]">
               <p>Phone : +62 8111 111 9328</p>
-              <p>Email : russofficial28@gmail.com</p>
+              <p>Email : holdmeofficial28@gmail.com</p>
               <p>
                 Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga
                 Kementerian Perdagangan RI0853-1111-1010
@@ -57,7 +57,7 @@ export default function Footer() {
 
         <section className="mt-12 max-w-md lg:mt-14 lg:max-w-lg">
           <h3 className="font-montserrat text-[13px] font-semibold uppercase tracking-[0.22em] text-[#1f1f1f]">
-            Join Russ Community
+            Join Holdme Community
           </h3>
           <form className="mt-4" action="#" method="post">
             <label htmlFor="email" className="sr-only">
@@ -83,7 +83,7 @@ export default function Footer() {
             English
           </button>
           <p className="font-semibold text-[#303030]">
-            © Russ & Co | Proud To Be
+            © Holdme & Co | Proud To Be
           </p>
         </div>
       </div>
