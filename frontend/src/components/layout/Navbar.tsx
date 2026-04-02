@@ -4,8 +4,8 @@ export default function Navbar() {
   return (
     <section className="w-full flex flex-col overflow-x-hidden">
       {/* top 1 */}
-      <div className="w-full bg-[#363636] h-10 items-center justify-center flex gap-4 border-b border-gray-300">
-        <p className="text-white text-center font-semibold text-[10px] font-poppins tracking-[0.18em] p-2">
+      <div className="w-full bg-[#363636] items-center justify-center flex">
+        <p className="text-white text-center font-semibold text-[10px] font-poppins tracking-[0.18em] p-3">
           ENJOY 85% OFF + FREE SHIPPING
         </p>
       </div>
@@ -41,7 +41,8 @@ export default function Navbar() {
 
         {/* menu */}
         <div className="mt-5 flex justify-center">
-          <ul className="flex flex-wrap font-semibold items-center justify-center gap-5 md:gap-9 font-poppins text-sm text-[#6a6a6a] uppercase tracking-[0.18em]">
+          <ul className="flex flex-wrap font-semibold items-center justify-center gap-5 md:gap-9 font-montserrat text-[12px] text-black uppercase tracking-[0.18em]">
+            <li>Website Exclusive</li>
             <li>New</li>
             <li>Product</li>
             <li>Blog</li>
