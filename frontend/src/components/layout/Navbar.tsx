@@ -10,9 +10,10 @@ export default function Navbar() {
         </p>
       </div>
       {/* top 2 */}
-      <div className="bg-white w-full px-6 md:px-10 py-4 border-b border-gray-200">
+      <div className="bg-white w-full px-6 md:px-10 py-6 border-b border-gray-200">
         <div className="grid grid-cols-3 items-center">
-          <div className="flex items-center mt-1 text-[10px] font-inter font-semibold text-[#6a6a6a]">
+          {/* bagian bahasa */}
+          <div className="hidden lg:block flex items-center mt-1 text-[10px] font-inter font-semibold text-[#6a6a6a]">
             <button
               aria-label="Change language"
               className="flex items-center gap-1 uppercase tracking-[0.18em]"
@@ -23,7 +24,7 @@ export default function Navbar() {
           </div>
 
           <h1 className="text-black text-xl md:text-2xl font-semibold font-poppins text-center uppercase tracking-[0.12em]">
-            Holdme
+            <a href="/">Holdme</a>
           </h1>
 
           <div className="flex items-center justify-end gap-5 text-slate-800">
@@ -39,16 +40,19 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* menu */}
+        {/* menu tengah */}
         <div className="mt-5 flex justify-center">
           <ul className="flex flex-wrap font-semibold items-center justify-center gap-5 md:gap-9 font-montserrat text-[12px] text-black uppercase tracking-[0.18em]">
             <li>Website Exclusive</li>
             <li>New</li>
-            <li>Product</li>
+            <li>
+              <a href="/products"> Product</a>
+            </li>
             <li>Blog</li>
             <li>About Us</li>
           </ul>
         </div>
+
       </div>
     </section>
   );
