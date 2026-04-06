@@ -22,13 +22,18 @@ export default function Products() {
             <button aria-label="Account" className="cursor-pointer">
               <LayoutGrid className="h-6 w-6 text-slate-500" strokeWidth={2} />
             </button>
-            <button aria-label="Account" className="hidden lg:block cursor-pointer ml-4">
+            <button
+              aria-label="Account"
+              className="hidden lg:block cursor-pointer ml-4"
+            >
               <Grid3X3 className="h-6 w-6 text-slate-500" strokeWidth={2} />
-            </button> 
-            <button aria-label="Account" className="lg:hidden cursor-pointer ml-4">
+            </button>
+            <button
+              aria-label="Account"
+              className="lg:hidden cursor-pointer ml-4"
+            >
               <Square className="h-6 w-6 text-slate-500" strokeWidth={2} />
-            </button> 
-
+            </button>
           </div>
 
           {/* sort */}
@@ -55,19 +60,19 @@ export default function Products() {
               <ul className="mt-2 text-[#6a6a6a] text-sm font-montserrat tracking-wide font-medium">
                 {/* 1 */}
                 <li>
-                  <a href="" className="block py-2">
+                  <a href="" className="block py-2 hover:text-black max-w-24">
                     T-shirt
                   </a>
                 </li>
                 {/* 2 */}
                 <li>
-                  <a href="" className="block py-2 max-w-24">
+                  <a href="" className="block py-2 hover:text-black max-w-24">
                     Shirt
                   </a>
                 </li>
                 {/* 3 */}
                 <li>
-                  <a href="" className="block py-2 max-w-24">
+                  <a href="" className="block py-2 hover:text-black max-w-24">
                     Short Pants
                   </a>
                 </li>
@@ -124,33 +129,47 @@ export default function Products() {
           </div>
 
           {/* products */}
-          <div className=" grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-8 w-full">
+          <div className=" grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8 w-full">
             {/* item 1 */}
             <div className="w-40 h-60 lg:w-52 lg:h-64 bg-gray-100 p-4">
-              <img src="/placeholder.svg" alt="Product" className="w-full h-auto" />
+              <img
+                src="/placeholder.svg"
+                alt="Product"
+                className="w-full h-auto"
+              />
               <h3 className="text-lg font-semibold mt-4">Product Name</h3>
               <p className="text-gray-500 mt-2">$19.99</p>
-            </div> 
+            </div>
             {/* item 2 */}
             <div className="w-40 h-60 lg:w-52 lg:h-64 bg-gray-100 p-4">
-              <img src="/placeholder.svg" alt="Product" className="w-full h-auto" />
+              <img
+                src="/placeholder.svg"
+                alt="Product"
+                className="w-full h-auto"
+              />
               <h3 className="text-lg font-semibold mt-4">Product Name</h3>
               <p className="text-gray-500 mt-2">$19.99</p>
-            </div> 
+            </div>
             {/* item 3 */}
             <div className="w-40 h-60 lg:w-52 lg:h-64 bg-gray-100 p-4">
-              <img src="/placeholder.svg" alt="Product" className="w-full h-auto" />
+              <img
+                src="/placeholder.svg"
+                alt="Product"
+                className="w-full h-auto"
+              />
               <h3 className="text-lg font-semibold mt-4">Product Name</h3>
               <p className="text-gray-500 mt-2">$19.99</p>
-            </div> 
+            </div>
             {/* item 4 */}
             <div className="w-40 h-60 lg:w-52 lg:h-64 bg-gray-100 p-4">
-              <img src="/placeholder.svg" alt="Product" className="w-full h-auto" />
+              <img
+                src="/placeholder.svg"
+                alt="Product"
+                className="w-full h-auto"
+              />
               <h3 className="text-lg font-semibold mt-4">Product Name</h3>
               <p className="text-gray-500 mt-2">$19.99</p>
-            </div> 
-            
-
+            </div>
           </div>
 
           {/* end */}
