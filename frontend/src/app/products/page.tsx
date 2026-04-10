@@ -156,20 +156,24 @@ export default function Products() {
                 </div>
               </div>
             </div>
-
             {/* ITEM 2 */}
             <div className="w-full flex flex-col group cursor-pointer">
+              {/* Kontainer Gambar */}
               <div className="w-full aspect-[4/5] bg-gray-100 overflow-hidden relative">
                 <img
-                  src="/placeholder.svg"
+                  src="/placeholder.svg" // Ganti dengan path gambarmu
                   alt="Tshirt Oversized"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
+
+              {/* Detail Produk */}
               <div className="mt-4 flex flex-col">
-                <h3 className="text-sm md:text-base font-bold text-black uppercase tracking-wide leading-snug">
+                <h3 className="text-sm md:text-base text-[#6a6a6a] uppercase tracking-wide leading-snug">
                   Tshirt Oversized Cotton 16s OE Baller Black
                 </h3>
+
+                {/* Area Harga */}
                 <div className="flex flex-row items-center gap-3 mt-2 text-base md:text-lg font-bold">
                   <span className="text-[#ff5252]">149.000</span>
                   <span className="text-gray-500 line-through decoration-gray-500 decoration-2">
@@ -178,20 +182,50 @@ export default function Products() {
                 </div>
               </div>
             </div>
-
             {/* ITEM 3 */}
             <div className="w-full flex flex-col group cursor-pointer">
+              {/* Kontainer Gambar */}
               <div className="w-full aspect-[4/5] bg-gray-100 overflow-hidden relative">
                 <img
-                  src="/placeholder.svg"
+                  src="/placeholder.svg" // Ganti dengan path gambarmu
                   alt="Tshirt Oversized"
                   className="w-full h-full object-cover object-center"
                 />
               </div>
+
+              {/* Detail Produk */}
               <div className="mt-4 flex flex-col">
-                <h3 className="text-sm md:text-base font-bold text-black uppercase tracking-wide leading-snug">
+                <h3 className="text-sm md:text-base text-[#6a6a6a] uppercase tracking-wide leading-snug">
                   Tshirt Oversized Cotton 16s OE Baller Black
                 </h3>
+
+                {/* Area Harga */}
+                <div className="flex flex-row items-center gap-3 mt-2 text-base md:text-lg font-bold">
+                  <span className="text-[#ff5252]">149.000</span>
+                  <span className="text-gray-500 line-through decoration-gray-500 decoration-2">
+                    250.000
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* ITEM 4 */}
+            <div className="w-full flex flex-col group cursor-pointer">
+              {/* Kontainer Gambar */}
+              <div className="w-full aspect-[4/5] bg-gray-100 overflow-hidden relative">
+                <img
+                  src="/placeholder.svg" // Ganti dengan path gambarmu
+                  alt="Tshirt Oversized"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+
+              {/* Detail Produk */}
+              <div className="mt-4 flex flex-col">
+                <h3 className="text-sm md:text-base text-[#6a6a6a] uppercase tracking-wide leading-snug">
+                  Tshirt Oversized Cotton 16s OE Baller Black
+                </h3>
+
+                {/* Area Harga */}
                 <div className="flex flex-row items-center gap-3 mt-2 text-base md:text-lg font-bold">
                   <span className="text-[#ff5252]">149.000</span>
                   <span className="text-gray-500 line-through decoration-gray-500 decoration-2">
@@ -201,27 +235,7 @@ export default function Products() {
               </div>
             </div>
 
-            {/* ITEM 4 */}
-            <div className="w-full flex flex-col group cursor-pointer">
-              <div className="w-full aspect-[4/5] bg-gray-100 overflow-hidden relative">
-                <img
-                  src="/placeholder.svg"
-                  alt="Tshirt Oversized"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              <div className="mt-4 flex flex-col">
-                <h3 className="text-sm md:text-base font-bold text-black uppercase tracking-wide leading-snug">
-                  Tshirt Oversized Cotton 16s OE Baller Black
-                </h3>
-                <div className="flex flex-row items-center gap-3 mt-2 text-base md:text-lg font-bold">
-                  <span className="text-[#ff5252]">149.000</span>
-                  <span className="text-gray-500 line-through decoration-gray-500 decoration-2">
-                    250.000
-                  </span>
-                </div>
-              </div>
-            </div>
+
           </div>
 
           {/* end */}
