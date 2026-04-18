@@ -1,10 +1,28 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { LayoutGrid, Grid3X3, ChevronDown, Square } from "lucide-react";
 
 export default function Products() {
   const [view, setView] = useState<"grid2" | "grid4">("grid4");
   const [activeFilter, setActiveFilter] = useState("kaos");
+  const [sortOpen, setSortOpen] = useState(false);
+  const [activeSort, setActiveSort] = useState("Produk Terlaris");
+
+  useEffect(() => {
+    document.body.style.overflow = sortOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [sortOpen]);
+
+  const sortOptions = [
+    "Unggulan",
+    "Paling Relevan",
+    "Produk Terlaris",
+    "Berdasarkan Abjad, A-Z",
+    "Berdasarkan Abjad, Z-A",
+    "Berdasarkan Harga, Rendah ke Tinggi",
+    "Berdasarkan Harga, Tinggi ke Rendah",
+    "Berdasarkan Tanggal, Lama ke Baru",
+  ];
 
   return (
     <section className="w-full min-h-screen flex flex-col bg-white">
@@ -58,14 +76,42 @@ export default function Products() {
           </div>
 
           {/* sort */}
-          <button className="order-2 lg:order-last px-10 py-4 border-r lg:border-l border-gray-200 flex items-center">
-            <p className="text-sm font-semibold font-montserrat text-[#6a6a6a] tracking-widest">
-              Sort
-            </p>
-            <span className="text-xs leading-none text-[#6a6a6a] ml-2">
-              <ChevronDown className="w-4 h-4" strokeWidth={3} />
-            </span>
-          </button>
+          <div className="order-2 lg:order-last relative">
+            <button
+              onClick={() => setSortOpen((v) => !v)}
+              className="px-10 py-4 border-r lg:border-l border-gray-200 flex items-center gap-2"
+            >
+              <p className="text-sm font-semibold font-montserrat text-[#6a6a6a] tracking-widest uppercase">
+                Sort
+              </p>
+              <ChevronDown
+                className={`w-4 h-4 text-[#6a6a6a] transition-transform duration-200 ${sortOpen ? "rotate-180" : ""}`}
+                strokeWidth={3}
+              />
+            </button>
+
+            {sortOpen && (
+              <>
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setSortOpen(false)}
+                />
+                <div className="absolute right-0 top-full z-20 bg-white border border-gray-200 shadow-md min-w-[280px] py-2">
+                  {sortOptions.map((option) => (
+                    <button
+                      key={option}
+                      onClick={() => { setActiveSort(option); setSortOpen(false); }}
+                      className={`w-full text-right px-8 py-3 text-xs font-montserrat tracking-[0.14em] uppercase transition-colors hover:text-black ${
+                        activeSort === option ? "text-black font-bold" : "text-[#6a6a6a] font-medium"
+                      }`}
+                    >
+                      {option}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
 
         {/* Sidebar filter x Products */}
