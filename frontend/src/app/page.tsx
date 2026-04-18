@@ -10,34 +10,125 @@ export default function Home() {
       </header>
 
       <main className="w-full mt-16 relative ml-6">
-        {/* garis kiri */}
-        <div className="absolute left-0 top-0 h-[400px] bg-black w-0.5"></div>
-
-        {/* Kanan */}
+        {/*   judul */}
         <section className="w-full flex flex-col items-center">
-          <h1 className="text-lg font-montserrat text-[#222520] font-medium tracking-widest text-center">
-            Holdme x Nomitees
+          <h1 className="text-xs font-montserrat text-[#222520] font-medium tracking-[0.22em] uppercase text-center">
+            Proud of ME
           </h1>
-          <p className="font-poppins max-w-xl text-center text-base text-[#222520] mt-2">
-            Kumpulan artikel rilisan terbatas yang dirancang khusus buat nemenin
-            setiap langkah dan cerita lo di jalanan.
+          <p className="font-montserrat max-w-2xl text-center text-xl md:text-xl font-semibold text-[#222520] mt-3 tracking-[0.12em] uppercase">
+            Hot Picks You Don’t Want to Miss
           </p>
 
           {/* Grid Produk */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
-            <article className="group h-72 w-60 p-3 overflow-hidden">
-              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
-            </article>
-            <article className="group h-72 w-60 p-3 overflow-hidden">
-              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
-            </article>
-            <article className="group h-72 w-60 p-3 overflow-hidden">
-              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
-            </article>
-            <article className="group h-72 w-60 p-3 overflow-hidden">
-              <div className="h-full w-full border border-black rounded-lg will-change-transform transition-[border-radius,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:rounded-full group-hover:scale-[0.985]"></div>
-            </article>
-          </div>
+          {(() => {
+            const dummyProducts = [
+              {
+                name: "Sweater Hoodie Fleece Oldskull Misty",
+                price: "207.900",
+                original: "450.000",
+              },
+              {
+                name: "Jacket Taslan Bone Black",
+                price: "239.900",
+                original: "450.000",
+              },
+              {
+                name: "Sweater Hoodie Fleece Tinylog Black",
+                price: "209.900",
+                original: "450.000",
+              },
+              {
+                name: "Pants Long Twill Streach Suspect Long Black",
+                price: "159.900",
+                original: "350.000",
+              },
+              {
+                name: "Tshirt Oversize Graphic Cream",
+                price: "119.900",
+                original: "250.000",
+              },
+              {
+                name: "Jacket Varsity Wool Navy Blue",
+                price: "299.900",
+                original: "550.000",
+              },
+              {
+                name: "Sweater Crewneck Basic Black",
+                price: "189.900",
+                original: "380.000",
+              },
+              {
+                name: "Shorts Cargo Ripstop Olive",
+                price: "139.900",
+                original: "280.000",
+              },
+              {
+                name: "Tshirt Boxy Fit White Russ Logo",
+                price: "99.900",
+                original: "200.000",
+              },
+              {
+                name: "Jacket Windbreaker Slate Grey",
+                price: "279.900",
+                original: "500.000",
+              },
+              {
+                name: "Pants Jogger Fleece Charcoal",
+                price: "169.900",
+                original: "320.000",
+              },
+              {
+                name: "Hoodie Zip Up Stone Wash",
+                price: "229.900",
+                original: "420.000",
+              },
+              {
+                name: "Tshirt Graphic Vintage Brown",
+                price: "109.900",
+                original: "220.000",
+              },
+              {
+                name: "Sweater Knit Stripe Cream",
+                price: "199.900",
+                original: "400.000",
+              },
+              {
+                name: "Jacket Denim Washed Blue",
+                price: "319.900",
+                original: "600.000",
+              },
+              {
+                name: "Pants Twill Straight Khaki",
+                price: "179.900",
+                original: "360.000",
+              },
+            ];
+            return (
+              <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mt-10 px-2">
+                {dummyProducts.map((product, i) => (
+                  <article
+                    key={i}
+                    className="flex flex-col cursor-pointer group"
+                  >
+                    <div className="w-full aspect-square bg-[#f5f5f5]" />
+                    <div className="mt-4">
+                      <h3 className="text-xs font-montserrat font-semibold uppercase text-black tracking-wide leading-snug">
+                        {product.name}
+                      </h3>
+                      <div className="flex items-center gap-3 mt-2">
+                        <span className="text-sm font-poppins text-red-500">
+                          {product.price}
+                        </span>
+                        <span className="text-xs font-poppins text-gray-400 line-through">
+                          {product.original}
+                        </span>
+                      </div>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            );
+          })()}
           <div className="w-full flex justify-center mt-24 mb-4">
             <button className="bg-black font-semibold font-montserrat text-[13px] tracking-[0.18em] text-white py-3 px-8 hover:bg-gray-800 transition-colors">
               View All Products
@@ -216,7 +307,7 @@ export default function Home() {
       <section className="w-[calc(100%+2rem)] -mx-4 h-[48rem] bg-black mt-16 mb-20"></section>
       <section className="w-full mt-8 mb-28 flex flex-col items-center">
         <h2 className="text-xl md:text-xl font-montserrat font-semibold tracking-[0.24em] text-center uppercase text-[#111]">
-          HOLDME X TOY STORY
+          Collaboration Series
         </h2>
         <button className="mt-8 bg-black font-semibold font-montserrat text-[13px] tracking-[0.18em] text-white py-3 px-8 hover:bg-gray-800 transition-colors">
           View All Products
