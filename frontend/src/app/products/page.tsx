@@ -7,7 +7,7 @@ export default function Products() {
   const [activeFilter, setActiveFilter] = useState("kaos");
 
   return (
-    <section className="w-full min-h-screen flex flex-col bg-white overflow-x-hidden">
+    <section className="w-full min-h-screen flex flex-col bg-white">
       <div className="w-full flex py-10 flex-col items-center">
         <h2 className="text-lg md:text-xl font-montserrat font-semibold tracking-[0.24em] text-center uppercase text-[#111]">
           HOLDME X KALCER ABIZZ
@@ -146,6 +146,7 @@ export default function Products() {
 
           {/* end */}
         </div>
+        
       </section>
     </section>
   );
