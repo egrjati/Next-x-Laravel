@@ -2,24 +2,34 @@
 import { useState } from "react";
 import { ChevronDown, Menu, Search, ShoppingBag, User, X } from "lucide-react";
 
+const navLinks = [
+  { label: "Products", href: "/products" },
+  { label: "Collaboration", href: "#" },
+  { label: "Man", href: "#" },
+  { label: "Woman", href: "#" },
+];
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <section className="w-full flex flex-col">
       {/* TOP BAR */}
-      <div className="w-full bg-[#363636] flex justify-center">
-        <p className="text-white text-center font-semibold text-[10px] tracking-[0.18em] p-3">
+      <div className="w-full bg-[#2b2b2b] flex justify-center py-3">
+        <p className="text-white text-center font-semibold text-[10px] tracking-[0.22em]">
           ENJOY 85% OFF + FREE SHIPPING
         </p>
       </div>
 
-      {/* NAVBAR */}
-      <div className="bg-white w-full px-6 md:px-10 py-6 border-b border-gray-200 relative z-40">
+      {/* MAIN NAV ROW */}
+      <div className="bg-white w-full px-6 md:px-10 pt-5 pb-4 relative z-40">
         <div className="grid grid-cols-3 items-center">
-          {/* LEFT */}
+          {/* LEFT — language */}
           <div className="flex items-center">
-            {/* MOBILE MENU BUTTON */}
+            <button className="hidden lg:flex items-center gap-1 text-[10px] font-semibold text-[#6a6a6a] uppercase tracking-[0.18em]">
+              <span>Indonesia</span>
+              <ChevronDown className="h-3 w-3" />
+            </button>
             <button
               aria-label="Open menu"
               className="block lg:hidden"
@@ -27,78 +37,77 @@ export default function Navbar() {
             >
               <Menu className="h-6 w-6 text-black" />
             </button>
-
-            {/* DESKTOP LANGUAGE */}
-            <div className="hidden lg:flex items-center text-[10px] font-semibold text-[#6a6a6a]">
-              <button className="flex items-center gap-1 uppercase tracking-[0.18em]">
-                <span>Indonesia</span>
-                <ChevronDown className="h-4 w-4" />
-              </button>
-            </div>
           </div>
 
-          {/* CENTER LOGO */}
-          <h1 className="text-black text-xl md:text-2xl font-semibold text-center uppercase tracking-[0.12em]">
-            <a href="/">Holdme</a>
-          </h1>
+          {/* CENTER — logo */}
+          <div className="flex justify-center">
+            <a href="/" aria-label="Home">
+              <img
+                src="/asset/icon/holdme.svg"
+                alt="Holdme Logo"
+                className="h-10 w-10 object-contain"
+              />
+            </a>
+          </div>
 
-          {/* RIGHT ICONS */}
-          <div className="flex items-center justify-end gap-5 text-slate-800">
+          {/* RIGHT — icons */}
+          <div className="flex items-center justify-end gap-5 text-[#1c1b1b]">
             <button aria-label="Account">
-              <User className="h-6 w-6" />
+              <User className="h-5 w-5" strokeWidth={1.5} />
             </button>
             <button aria-label="Search">
-              <Search className="h-6 w-6" />
+              <Search className="h-5 w-5" strokeWidth={1.5} />
             </button>
             <button aria-label="Cart">
-              <ShoppingBag className="h-6 w-6" />
+              <ShoppingBag className="h-5 w-5" strokeWidth={1.5} />
             </button>
           </div>
         </div>
 
-        {/* DESKTOP MENU */}
-        <div className="hidden lg:flex mt-5 justify-center">
-          <ul className="text-[#1c1b1b] flex gap-9 font-semibold text-[12px] uppercase tracking-[0.18em]">
-            <li>Website Exclusive</li>
-            <li>New</li>
-            <li>
-              <a href="/products">Product</a>
-            </li>
-            <li>Blog</li>
-            <li>About Us</li>
+        {/* DESKTOP NAV LINKS */}
+        <nav className="hidden lg:flex justify-center mt-5 border-t border-gray-100 pt-4">
+          <ul className="flex gap-10">
+            {navLinks.map((link) => (
+              <li key={link.label}>
+                <a
+                  href={link.href}
+                  className="text-[#1c1b1b] text-[11px] font-semibold uppercase tracking-[0.18em] hover:text-gray-500 transition-colors"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
-        </div>
+        </nav>
       </div>
 
-      {/* 🔥 MOBILE MENU */}
+      {/* MOBILE MENU */}
       {isOpen && (
         <>
-          {/* OVERLAY */}
           <div
             className="fixed inset-0 bg-black/40 z-40 lg:hidden"
             onClick={() => setIsOpen(false)}
           />
-
-          {/* SIDEBAR MENU */}
           <div className="fixed top-0 left-0 h-screen w-[75%] max-w-xs bg-white z-50 p-6 shadow-lg lg:hidden">
-            {/* CLOSE BUTTON */}
             <button
               onClick={() => setIsOpen(false)}
-              className="mb-6"
+              className="mb-8"
               aria-label="Close menu"
             >
               <X className="h-6 w-6" />
             </button>
-
-            {/* MENU LIST */}
-            <ul className="flex flex-col gap-6 font-semibold text-[14px] uppercase tracking-[0.18em]">
-              <li>Website Exclusive</li>
-              <li>New</li>
-              <li>
-                <a href="/products">Product</a>
-              </li>
-              <li>Blog</li>
-              <li>About Us</li>
+            <ul className="flex flex-col gap-6">
+              {navLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-[#1c1b1b] font-semibold text-[13px] uppercase tracking-[0.18em]"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </>

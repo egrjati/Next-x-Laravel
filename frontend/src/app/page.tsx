@@ -309,7 +309,35 @@ export default function Home() {
         <h2 className="text-xl md:text-xl font-montserrat font-semibold tracking-[0.24em] text-center uppercase text-[#111]">
           Collaboration Series
         </h2>
-        <button className="mt-8 bg-black font-semibold font-montserrat text-[13px] tracking-[0.18em] text-white py-3 px-8 hover:bg-gray-800 transition-colors">
+
+        {/* Grid Collaboration */}
+        <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mt-10 px-4">
+          {[
+            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman LS 01 White", price: "129.900", original: "250.000" },
+            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman SS 01 Black", price: "109.900", original: "200.000" },
+            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman SS 01 White", price: "109.900", original: "200.000" },
+            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman SS 03 Black", price: "109.900", original: "200.000" },
+            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman LS 02 Black", price: "129.900", original: "250.000" },
+            { name: "Russ Hoodie Fleece Russpiderman Beyond Amazing Black", price: "199.900", original: "380.000" },
+            { name: "Russ Tshirt Oversize Russpiderman Web Crawler White", price: "119.900", original: "230.000" },
+            { name: "Russ Tshirt Russpiderman Not A Killer Cream", price: "109.900", original: "200.000" },
+          ].map((product, i) => (
+            <article key={i} className="flex flex-col cursor-pointer">
+              <div className="w-full aspect-square bg-[#f5f5f5]" />
+              <div className="mt-4">
+                <h3 className="text-xs font-montserrat font-semibold uppercase text-black tracking-wide leading-snug">
+                  {product.name}
+                </h3>
+                <div className="flex items-center gap-3 mt-2">
+                  <span className="text-sm font-poppins text-red-500">{product.price}</span>
+                  <span className="text-xs font-poppins text-gray-400 line-through">{product.original}</span>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <button className="mt-16 bg-black font-semibold font-montserrat text-[13px] tracking-[0.18em] text-white py-3 px-8 hover:bg-gray-800 transition-colors">
           View All Products
         </button>
       </section>
