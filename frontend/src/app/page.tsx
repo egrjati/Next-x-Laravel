@@ -9,7 +9,7 @@ export default function Home() {
         />
       </header>
 
-      <main className="w-full mt-16 relative ml-6">
+      <main className="w-full mt-16 relative px-6">
         {/*   judul */}
         <section className="w-full flex flex-col items-center">
           <h1 className="text-xs font-montserrat text-[#222520] font-medium tracking-[0.22em] uppercase text-center">
