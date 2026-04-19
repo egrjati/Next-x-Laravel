@@ -52,9 +52,9 @@ export default function Navbar() {
 
           {/* RIGHT — icons */}
           <div className="flex items-center justify-end gap-5 text-[#1c1b1b]">
-            <button aria-label="Account">
+            <a href="/profile" aria-label="Account">
               <User className="h-5 w-5" strokeWidth={1.5} />
-            </button>
+            </a>
             <button aria-label="Search">
               <Search className="h-5 w-5" strokeWidth={1.5} />
             </button>
