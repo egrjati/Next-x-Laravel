@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { X, MessageCircle, Phone, Mail } from "lucide-react";
+import { X, Headphones, Phone, Mail } from "lucide-react";
 
 const channels = [
   {
@@ -62,15 +62,21 @@ export default function FloatingCS() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label="Customer Service"
-        className={`w-13 h-13 rounded-full shadow-lg flex items-center justify-center transition-all duration-300 ${
-          open ? "bg-gray-900 rotate-90" : "bg-black hover:scale-105"
+        className={`w-13 h-13 rounded-full shadow-xl flex items-center justify-center transition-all duration-300 ${
+          open ? "rotate-12" : "hover:scale-105"
         }`}
-        style={{ width: 52, height: 52 }}
+        style={{
+          width: 52,
+          height: 52,
+          background: open
+            ? "linear-gradient(135deg, #374151, #111827)"
+            : "linear-gradient(135deg, #1a1a1a, #3a3a3a)",
+        }}
       >
         {open ? (
           <X className="w-5 h-5 text-white" />
         ) : (
-          <MessageCircle className="w-5 h-5 text-white" fill="white" />
+          <Headphones className="w-5 h-5 text-white" />
         )}
       </button>
     </div>
