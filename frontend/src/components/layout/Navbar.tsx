@@ -56,7 +56,7 @@ export default function Navbar() {
               <Search className="h-6 w-6" strokeWidth={1.5} />
             </a>
 
-            <button aria-label="Cart">
+            <a href="/cart" aria-label="Cart">
               <svg
                 width="24"
                 height="24"
@@ -97,7 +97,7 @@ export default function Navbar() {
                   fill="#121314"
                 />
               </svg>
-            </button>
+            </a>
 
             <a href="/profile" aria-label="Account">
               <User className="h-6 w-6" strokeWidth={1.5} />
