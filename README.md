@@ -14,7 +14,7 @@ Platform *e-commerce* fashion **Holdme** — memadukan kecepatan **Next.js**, ke
 <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
 <img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
 <img src="https://img.shields.io/badge/Filament-FDAE4B?style=for-the-badge&logo=laravel&logoColor=white" alt="Filament" />
-<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
 <img src="https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 
@@ -29,7 +29,7 @@ Platform *e-commerce* fashion **Holdme** — memadukan kecepatan **Next.js**, ke
 <div align="center">
   <br/>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nextjs,ts,tailwind,laravel,php,mysql&perline=6" alt="Tech Stack Icons" />
+    <img src="https://skillicons.dev/icons?i=nextjs,ts,tailwind,laravel,php,postgres&perline=6" alt="Tech Stack Icons" />
   </a>
   <br/>
 </div>
@@ -71,8 +71,8 @@ Mesin utama yang menangani logika bisnis, data, dan panel admin.
 * **Laravel Sanctum:** Autentikasi berbasis token yang aman antara Next.js dan Laravel.
 * **Eloquent ORM:** Menyederhanakan interaksi database menjadi query yang intuitif.
 
-### Database — MySQL
-* Relational database untuk menjaga integritas dan relasi data (produk, kategori, user, pesanan).
+### Database — PostgreSQL
+* Relational database yang robust untuk menjaga integritas dan relasi data (produk, kategori, user, pesanan).
 * Terintegrasi dengan sistem migration Laravel untuk kontrol versi struktur database.
 
 ---
