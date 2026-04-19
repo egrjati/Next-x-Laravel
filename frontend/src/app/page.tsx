@@ -1,3 +1,5 @@
+import TestimonialSlider from "@/components/ui/TestimonialSlider";
+
 export default function Home() {
   return (
     <section className="w-full min-h-screen flex flex-col bg-white overflow-x-hidden">
@@ -343,21 +345,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial */}
-      <section className="w-[calc(100%+2rem)] -mx-4 bg-black px-5 py-20 flex flex-col items-center justify-center">
-        <p className="max-w-2xl text-center text-white font-poppins font-medium text-lg leading-[1.6]">
-          "Great Product! Iam not saying for compliment, this my honest review.
-          Proud for Russ."
-        </p>
-
-        <div
-          className="mt-20 flex items-center gap-4"
-          aria-label="testimonial indicators"
-        >
-          <span className="w-3 h-3 rounded-full border border-white/40"></span>
-          <span className="w-3 h-3 rounded-full bg-white"></span>
-          <span className="w-3 h-3 rounded-full border border-white/40"></span>
-        </div>
-      </section>
+      <TestimonialSlider />
     </section>
   );
 }
