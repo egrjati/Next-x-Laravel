@@ -7,8 +7,9 @@ import {
   Space_Grotesk,
 } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
-import "./globals.css";
 import Footer from "@/components/layout/Footer";
+import FloatingCS from "@/components/ui/FloatingCS";
+import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -56,6 +57,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
 
         <Footer />
+        <FloatingCS />
       </body>
     </html>
   );
