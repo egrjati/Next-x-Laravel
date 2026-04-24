@@ -65,7 +65,7 @@ export default function Home() {
                 original: "280.000",
               },
               {
-                name: "Tshirt Boxy Fit White Russ Logo",
+                name: "Tshirt Boxy Fit White Me Logo",
                 price: "99.900",
                 original: "200.000",
               },
@@ -315,14 +315,14 @@ export default function Home() {
         {/* Grid Collaboration */}
         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-10 mt-10 px-4">
           {[
-            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman LS 01 White", price: "129.900", original: "250.000" },
-            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman SS 01 Black", price: "109.900", original: "200.000" },
-            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman SS 01 White", price: "109.900", original: "200.000" },
-            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman SS 03 Black", price: "109.900", original: "200.000" },
-            { name: "Russ Kids Tshirt Combed 30s Kids Russpiderman LS 02 Black", price: "129.900", original: "250.000" },
-            { name: "Russ Hoodie Fleece Russpiderman Beyond Amazing Black", price: "199.900", original: "380.000" },
-            { name: "Russ Tshirt Oversize Russpiderman Web Crawler White", price: "119.900", original: "230.000" },
-            { name: "Russ Tshirt Russpiderman Not A Killer Cream", price: "109.900", original: "200.000" },
+            { name: "Holdme Kids Tshirt Combed 30s Kids Holdpiderman LS 01 White", price: "129.900", original: "250.000" },
+            { name: "Holdme Kids Tshirt Combed 30s Kids Holdpiderman SS 01 Black", price: "109.900", original: "200.000" },
+            { name: "Holdme Kids Tshirt Combed 30s Kids Holdpiderman SS 01 White", price: "109.900", original: "200.000" },
+            { name: "Holdme Kids Tshirt Combed 30s Kids Holdpiderman SS 03 Black", price: "109.900", original: "200.000" },
+            { name: "Holdme Kids Tshirt Combed 30s Kids Holdpiderman LS 02 Black", price: "129.900", original: "250.000" },
+            { name: "Holdme Hoodie Fleece Holdpiderman Beyond Amazing Black", price: "199.900", original: "380.000" },
+            { name: "Holdme Tshirt Oversize Holdpiderman Web Crawler White", price: "119.900", original: "230.000" },
+            { name: "Holdme Tshirt Holdpiderman Not A Killer Cream", price: "109.900", original: "200.000" },
           ].map((product, i) => (
             <article key={i} className="flex flex-col cursor-pointer">
               <div className="w-full aspect-square bg-[#f5f5f5]" />
