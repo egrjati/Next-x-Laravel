@@ -1,5 +1,6 @@
 <?php
-
+// Ini adalah "jembatan" antara Filament dan database
+// Category punya banyak Product (hasMany)
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;

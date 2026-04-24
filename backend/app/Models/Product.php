@@ -1,5 +1,6 @@
 <?php
-
+// Ini adalah "jembatan" antara Filament dan database
+// Product milik satu Category (belongsTo)
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
