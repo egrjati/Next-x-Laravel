@@ -4,22 +4,22 @@ import { useState, useEffect } from "react";
 const testimonials = [
   {
     quote:
-      "Great product! I'm not saying this for compliment — this is my honest review. Quality and design yang beneran bikin bangga. Proud for Russ.",
-    author: "@russ_everyday",
+      "Great product! I'm not saying this for compliment — this is my honest review. Quality and design yang beneran bikin bangga. Proud for Hdme.",
+    author: "@hdme_everyday",
   },
   {
     quote:
-      "Bahan premium, jahitan rapi, dan desain yang timeless. Udah beli lebih dari 5 item dan semuanya nggak pernah mengecewakan. Russ is the real deal.",
+      "Bahan premium, jahitan rapi, dan desain yang timeless. Udah beli lebih dari 5 item dan semuanya nggak pernah mengecewakan. Hdme is the real deal.",
     author: "@stylegang.id",
   },
   {
     quote:
-      "Pakai kaos Russ tuh bikin pede seharian. Fit-nya pas, nggak melar walau udah dicuci berkali-kali. Ini bukan promosi, ini murni pengalaman.",
+      "Pakai kaos Hdme tuh bikin pede seharian. Fit-nya pas, nggak melar walau udah dicuci berkali-kali. Ini bukan promosi, ini murni pengalaman.",
     author: "@hariankece",
   },
   {
     quote:
-      "Packaging rapih, pengiriman cepat, dan produknya melebihi ekspektasi. Kalau nanya rekomen brand lokal, Russ selalu jadi jawaban pertama gue.",
+      "Packaging rapih, pengiriman cepat, dan produknya melebihi ekspektasi. Kalau nanya rekomen brand lokal, Hdme selalu jadi jawaban pertama gue.",
     author: "@localpride.co",
   },
 ];
